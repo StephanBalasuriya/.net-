@@ -26,3 +26,4 @@ C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\refint\WebApplicat
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.pdb
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.genruntimeconfig.cache
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\ref\WebApplication1.dll
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.sourcelink.json

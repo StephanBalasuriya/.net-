@@ -14,3 +14,16 @@ Content-Type: application/json
   "Price": 59.99,
   "ReleaseDate": "2026-10-20"
 }
+
+
+###
+PUT http://localhost:5288/games/1
+Content-Type: application/json
+
+ {
+    "id": 1,
+    "name": "The Legend of Zelda: Updated",
+    "genre": "Action-Adventure",
+    "price":59.99,
+    "releaseDate": "2023-05-15"
+  }

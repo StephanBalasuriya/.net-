@@ -47,5 +47,28 @@ app.MapPost("/games", (CreateGameDto createGameDto) =>
 });
 
 
+//update existing game
+app.MapPut("/games/{id}", (int id, UpdateGameDto updateGameDto) =>
+{
+    var existingGameIndex = games.FindIndex(g => g.Id == id);
+    if (existingGameIndex == -1)
+    {
+        return Results.NotFound();
+    }
+
+    var updatedGame = new GameDto
+    (
+        Id: id,
+        Name: updateGameDto.Name,
+        Genre: updateGameDto.Genre,
+        Price: updateGameDto.Price,
+        ReleaseDate: updateGameDto.ReleaseDate
+    );
+
+    games[existingGameIndex] = updatedGame;
+
+    return Results.NoContent();
+});
+
 
 app.Run();
