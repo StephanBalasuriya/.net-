@@ -15,6 +15,17 @@ Content-Type: application/json
   "ReleaseDate": "2026-10-20"
 }
 
+###
+//validation example
+POST http://localhost:5288/games
+Content-Type: application/json
+
+{
+  "Name": "",
+  "Genre":"Platformer",
+  "Price": 59.99,
+  "ReleaseDate": "2026-10-20"
+}
 
 ###
 PUT http://localhost:5288/games/1

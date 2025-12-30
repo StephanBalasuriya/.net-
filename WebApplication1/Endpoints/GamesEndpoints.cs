@@ -33,6 +33,13 @@ public static class GamesEndpoints
         //post new game
         group.MapPost("/", (CreateGameDto createGameDto) =>
         {
+
+            // validating input
+            if (string.IsNullOrEmpty(createGameDto.Name))
+            {
+                return Results.BadRequest("Game name cannot be empty.");
+            }//when using this method for validation, we have to type this for all inputs
+
             var newGame = new GameDto
             (
                 Id: games.Max(g => g.Id) + 1,
