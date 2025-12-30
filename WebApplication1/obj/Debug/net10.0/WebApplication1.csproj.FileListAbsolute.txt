@@ -1,9 +1,3 @@
-C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.AssemblyInfoInputs.cache
-C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.AssemblyInfo.cs
-C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.csproj.CoreCompileInputs.cache
-C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kanis\Documents\C#\WebApplication1\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\kanis\Documents\C#\WebApplication1\bin\Debug\net10.0\appsettings.json
 C:\Users\kanis\Documents\C#\WebApplication1\bin\Debug\net10.0\WebApplication1.staticwebassets.endpoints.json
@@ -12,6 +6,13 @@ C:\Users\kanis\Documents\C#\WebApplication1\bin\Debug\net10.0\WebApplication1.de
 C:\Users\kanis\Documents\C#\WebApplication1\bin\Debug\net10.0\WebApplication1.runtimeconfig.json
 C:\Users\kanis\Documents\C#\WebApplication1\bin\Debug\net10.0\WebApplication1.dll
 C:\Users\kanis\Documents\C#\WebApplication1\bin\Debug\net10.0\WebApplication1.pdb
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.AssemblyInfoInputs.cache
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.AssemblyInfo.cs
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.sourcelink.json
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -26,4 +27,3 @@ C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\refint\WebApplicat
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.pdb
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.genruntimeconfig.cache
 C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\ref\WebApplication1.dll
-C:\Users\kanis\Documents\C#\WebApplication1\obj\Debug\net10.0\WebApplication1.sourcelink.json
