@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 namespace WebApplication1.Dtos;
 
 public record CreateGameDto(
-    [Required] string Name, 
+    [Required] [StringLength(40)]string Name, 
     string Genre, 
-    decimal Price, 
+    [Range(0, 50)]decimal Price, 
     DateOnly ReleaseDate
     );
