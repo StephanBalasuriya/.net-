@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
+using Microsoft.Extensions.Options;
 using WebApplication1.Data;
 using WebApplication1.Dtos;
 using WebApplication1.Endpoints;
+using WebApplication1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddValidation();
@@ -9,8 +12,8 @@ var connString = "Data Source=game_store.db";
 // builder.Services.AddSqlite<GameStoreContext>(connString);
 
 // Change AddSqlite to AddDbContext
-builder.Services.AddDbContext<GameStoreContext>(options =>
-    options.UseSqlite(connString));
+builder.Services.AddDbContext<GameStoreContext>(
+    options => options.UseSqlite(connString)  );
     
 var app = builder.Build();
 
