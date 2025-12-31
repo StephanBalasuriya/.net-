@@ -1,8 +1,11 @@
+using WebApplication1.Data;
 using WebApplication1.Dtos;
 using WebApplication1.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddValidation();
+var connString = "Data Source=game_store.db";
+builder.Services.AddSqlite<GameStoreContext>(connString);
 var app = builder.Build();
 
 
@@ -76,10 +79,10 @@ var app = builder.Build();
 // //delete a game
 // app.MapDelete("/games/{id}", (int id) =>
 // {
-   
+
 //     games.RemoveAll(games => games.Id == id);
 //     return Results.NoContent();
 // });
-
+ 
 app.MapGamesEndpoints();
 app.Run();

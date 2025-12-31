@@ -28,6 +28,18 @@ Content-Type: application/json
 }
 
 ###
+//Maximum length validation example
+POST http://localhost:5288/games    
+Content-Type: application/json
+
+{
+  "Name": "This game name is way too long to be accepted by the validation rules set in the CreateGameDto class",
+  "Genre":"Platformer",
+  "Price": 59.99,
+  "ReleaseDate": "2026-10-20"
+}
+
+###
 PUT http://localhost:5288/games/1
 Content-Type: application/json
 
