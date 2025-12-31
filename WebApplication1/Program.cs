@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using WebApplication1.Data;
 using WebApplication1.Dtos;
 using WebApplication1.Endpoints;
@@ -5,7 +6,12 @@ using WebApplication1.Endpoints;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddValidation();
 var connString = "Data Source=game_store.db";
-builder.Services.AddSqlite<GameStoreContext>(connString);
+// builder.Services.AddSqlite<GameStoreContext>(connString);
+
+// Change AddSqlite to AddDbContext
+builder.Services.AddDbContext<GameStoreContext>(options =>
+    options.UseSqlite(connString));
+    
 var app = builder.Build();
 
 
@@ -85,4 +91,6 @@ var app = builder.Build();
 // });
  
 app.MapGamesEndpoints();
+
+app.MigrateDb();
 app.Run();
