@@ -8,7 +8,7 @@ using WebApplication1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddValidation();
-var connString = "Data Source=game_store.db";
+var connString = builder.Configuration.GetConnectionString("GameStore");
 // builder.Services.AddSqlite<GameStoreContext>(connString);
 
 // Change AddSqlite to AddDbContext
