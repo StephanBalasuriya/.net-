@@ -1,5 +1,7 @@
 
+using WebApplication1.Data;
 using WebApplication1.Dtos;
+using WebApplication1.Models;
 
 namespace WebApplication1.Endpoints;
 
@@ -31,7 +33,7 @@ public static class GamesEndpoints
 
 
         //post new game
-        group.MapPost("/", (CreateGameDto createGameDto) =>
+        group.MapPost("/", (CreateGameDto createGameDto, GameStoreContext dbcontext) =>
         {
 
             // // validating input
@@ -40,22 +42,50 @@ public static class GamesEndpoints
             //     return Results.BadRequest("Game name cannot be empty.");
             // }//when using this method for validation, we have to type this for all inputs
 
-            var newGame = new GameDto
-            (
-                Id: games.Max(g => g.Id) + 1,
-                Name: createGameDto.Name,
-                Genre: createGameDto.Genre,
-                Price: createGameDto.Price,
-                ReleaseDate: createGameDto.ReleaseDate
-            );
+            // var newGame = new GameDto
+            // (
+            //     Id: games.Max(g => g.Id) + 1,
+            //     Name: createGameDto.Name,
+            //     Genre: createGameDto.Genre,
+            //     Price: createGameDto.Price,
+            //     ReleaseDate: createGameDto.ReleaseDate
+            // );
 
-            games.Add(newGame);
+            // games.Add(newGame);
+
+            // return Results.CreatedAtRoute(
+            //     "GetGameById",
+            //     new { id = newGame.Id },
+            //     newGame
+            // );
+
+            Game newGame = new()
+            {
+                Name = createGameDto.Name,
+                GenreId = createGameDto.GenreId,
+                Price = createGameDto.Price,
+                ReleaseDate = createGameDto.ReleaseDate
+            };
+
+            dbcontext.Games.Add(newGame);
+            dbcontext.SaveChanges();
+
+            GameDetailsDto gameDto = new(
+                            newGame.Id,
+                            newGame.Name,
+                            newGame.GenreId,
+                            newGame.Price,
+                            newGame.ReleaseDate
+                        );
 
             return Results.CreatedAtRoute(
                 "GetGameById",
                 new { id = newGame.Id },
-                newGame
+                gameDto
             );
+
+
+
         });
 
 

@@ -4,7 +4,8 @@ namespace WebApplication1.Dtos;
 
 public record CreateGameDto(
     [Required] [StringLength(40)]string Name, 
-    string Genre, 
+    // string Genre, 
+    [Range(1,50)] int GenreId,
     [Range(0, 50)]decimal Price, 
     DateOnly ReleaseDate
     );
