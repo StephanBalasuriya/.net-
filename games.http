@@ -2,7 +2,7 @@
 GET http://localhost:5288/games
 
 ###
-GET http://localhost:5288/games/1
+GET http://localhost:5288/games/5
 
 ###
 POST http://localhost:5288/games
@@ -12,6 +12,17 @@ Content-Type: application/json
   "Name": "Super Mario",
   "Genre":"Platformer",
   "Price": 59.99,
+  "ReleaseDate": "2026-10-20"
+}
+
+###
+POST http://localhost:5288/games
+Content-Type: application/json
+
+{
+  "Name": "Super Mario",
+  "GenreId":3,
+  "Price": 49.99,
   "ReleaseDate": "2026-10-20"
 }
 
